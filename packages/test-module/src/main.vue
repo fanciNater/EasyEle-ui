@@ -1,20 +1,19 @@
 <template>
   <div class="test-module">
-    test-module
+    这是测试的组件
   </div>
 </template>
 
 <script>
-console.log('======================')
-console.log('test - module')
-console.log('======================')
 export default {
-  name: 'TestModule',
-  mounted() {}
+  name: 'TestModule'
 }
 </script>
 <style scoped>
 .test-module {
-  background: blue;
+  border: 1px solid red;
+  color: red;
+  padding: 12px;
+  width: 100%;
 }
 </style>
