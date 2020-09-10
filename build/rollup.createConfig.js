@@ -33,7 +33,9 @@ function createPlugins({ min } = {}) {
     json(),
     filesize(),
     resolve({
-      extensions: aliasConfig.resolve
+      extensions: aliasConfig.resolve,
+      preferBuiltins: true, // 这一句是重点
+      mainFields: ['browser']
     }),
     babel({
       runtimeHelpers: true,

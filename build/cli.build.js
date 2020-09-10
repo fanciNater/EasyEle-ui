@@ -1,5 +1,5 @@
 const { run } = require('runjs')
-const libList = require('../src/lib-list.js')
+const libList = require('../packages/lib-list')
 const { addons } = require('../config/rollup.build.config.js')
 const { getAssetsPath, chalkConsole, resolve, fsExistsSync } = require('./utils')
 const { styleOutputPath } = require('../config/index')
