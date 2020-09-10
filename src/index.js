@@ -1,7 +1,6 @@
-import FileHandle from '../packages/file-handle/index'
 import TestModule from '../packages/test-module/index'
 import { version } from '../package.json'
-const components = [FileHandle, TestModule]
+const components = [TestModule]
 const install = function (Vue) {
   // 判断是否安装
   if (install.installed) {
@@ -19,6 +18,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   version,
   install,
-  FileHandle,
   TestModule
 }
