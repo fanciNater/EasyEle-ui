@@ -1,6 +1,6 @@
 const fs = require('fs')
 const { formatTypeList, addons, esDir } = require('../config/rollup.build.config.js')
-const libList = require('../src/lib-list.js')
+const libList = require('../packages/lib-list')
 const { styleOutputPath } = require('../config/index')
 const { build } = require('./rollup.createConfig')
 const { resolve, getAssetsPath } = require('./utils')

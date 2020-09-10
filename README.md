@@ -2,6 +2,7 @@
 
 [文档地址](https://juejin.im/post/5d7860b0f265da03bc12a3d2)
 
+[组件库官网](http://47.114.52.172/easyele-ui/dist/index.html)
 
 ## 安装依赖
 ```
