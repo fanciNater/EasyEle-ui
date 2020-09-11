@@ -1,0 +1,133 @@
+$--active-color:#2150db;
+$--title-color:#515561;
+$--meta-title-color:#515561;
+$--content-color:#5e6d82;
+
+section.view {
+  font-size: 14px;
+  a.md {
+    text-decoration: underline;
+  }
+  .md {
+    color: #515561;
+  }
+  .demo-block {
+    padding: 32px;
+    margin-top: 16px;
+    background-color: #fff;
+    border: 1px solid #e2ecf4;
+    border-radius: 4px 4px 0 0;
+    .demo-card {
+      display: inline-block;
+      margin-right: 50px;
+      margin-bottom: 20px;
+      vertical-align: bottom;
+    }
+  }
+  hr.md {
+    margin: 1.2em 0;
+    border: 0;
+    border-bottom: 1px solid #c5d9e8;
+    & +ul {
+      padding-left: 24px;
+      margin: 16px 0;
+      color: #3f536e;
+      list-style: disc;
+      li {
+        line-height: 1.8;
+      }
+    }
+  }
+  p.md {
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #3f536e;
+  }
+  h1.md {
+    font-size: 24px;
+  }
+  h1.md,
+  h2.md,
+  h3.md,
+  h4.md,
+  h5.md {
+    margin: 16px 0;
+    line-height: 1.5;
+    & +ul {
+      padding-left: 24px;
+      margin: 16px 0;
+      color: #3f536e;
+      list-style: disc;
+      li {
+        line-height: 1.8;
+      }
+    }
+  }
+  h2.md {
+    font-size: 18px;
+  }
+  .task-list {
+    padding-left: 24px;
+    margin: 16px 0;
+    color: #3f536e;
+    list-style: disc;
+    li {
+      line-height: 1.8;
+    }
+  }
+  ul.md {
+    padding-left: 24px;
+    margin: 16px 0;
+    color: #3f536e;
+    list-style: disc;
+    li {
+      line-height: 1.8;
+    }
+  }
+  pre {
+    padding: 16px;
+    margin: 16px 0;
+    overflow: auto;
+    background-color: #f7f7f7;
+    code {
+      padding: 0;
+      font-size: 1em;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+    }
+  }
+  code {
+    padding: .3em .5em;
+    font-size: .9em;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+  }
+  code.code_inline {
+    padding: 0 .5em;
+  }
+  table.table {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: auto;
+    font-size: 14px;
+    color: #5e6d82;
+    background-color: #fff;
+    border-collapse: collapse;
+    th {
+      padding: 10px 8px;
+      background-color: #fafbfc;
+      border-top: 1px solid #f3f7fa;
+      border-bottom: 1px solid #f3f7fa;
+    }
+    td {
+      padding: 10px 8px;
+      border-top: 1px solid #f3f7fa;
+      border-bottom: 1px solid #f3f7fa;
+    }
+  }
+}

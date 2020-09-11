@@ -1,0 +1,49 @@
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+@import "../../../assets/common.scss";
+@import "md.scss";
+@import "~highlight.js/styles/color-brewer";
+
+.container {
+  width: 90%;
+  margin: 48px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
+  .nav {
+    float: left;
+    width: 210px;
+  }
+  .view {
+    float: left;
+    width: calc(100% - 215px);
+    padding: 32px 48px 48px;
+    box-sizing: border-box;
+  }
+}
+
+.container:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.mobile-toggle-wrap {
+  position: fixed;
+  top: 18px;
+  right: 70px;
+  z-index: 999;
+  display: flex;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  color: #628cf5;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #628cf5;
+  transition: all 0.5s ease;
+  align-items: center;
+  &:hover {
+    border-radius: 14px;
+    opacity: 0.7;
+  }
+}
