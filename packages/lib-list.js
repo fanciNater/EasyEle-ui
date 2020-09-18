@@ -10,5 +10,10 @@ module.exports = {
   'e-request-plugin': {
     input: 'packages/plugins/request/e-request.js',
     output: 'e-request-plugin'
+  },
+  // 指令
+  'e-event-outside-directive': {
+    input: 'packages/directives/e-event-outside/index.js',
+    output: 'e-event-outside-directive'
   }
 }
