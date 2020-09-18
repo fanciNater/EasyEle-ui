@@ -1,6 +1,8 @@
-import TestModule from './components/test-module/index'
 import { version } from '../package.json'
+// 组件
+import TestModule from './components/test-module/index'
 
+// 插件
 import ERequestPlugin from './plugins/request/e-request'
 
 const components = [TestModule]
