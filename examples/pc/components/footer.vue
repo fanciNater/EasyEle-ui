@@ -1,7 +1,7 @@
 <template>
   <div class="page-footer">
     <a
-      href="https://github.com/Eamonnzhang/vue-cards"
+      href="https://github.com/fanciNater/EasyEle-ui.git"
       target="_blank"
       class="page-footer__github-link"
     >
