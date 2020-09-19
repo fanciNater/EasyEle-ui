@@ -2,11 +2,12 @@ import { version } from '../package.json'
 // 组件
 import TestModule from './components/test-module/index'
 import EEllipsis from './components/e-ellipsis/index'
+import ETagGroup from './components/e-tag-group/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
 
-const components = [TestModule, EEllipsis]
+const components = [TestModule, EEllipsis, ETagGroup]
 
 const plugins = [ERequestPlugin]
 
@@ -34,5 +35,6 @@ export default {
   install,
   TestModule,
   EEllipsis,
+  ETagGroup,
   ERequestPlugin
 }

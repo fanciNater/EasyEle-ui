@@ -12,6 +12,10 @@ module.exports = {
     input: 'packages/components/e-ellipsis/index.js',
     output: 'e-ellipsis'
   },
+  'e-tag-group': {
+    input: 'packages/components/e-tag-group/index.js',
+    output: 'e-tag-group'
+  },
   // 插件
   'e-request-plugin': {
     input: 'packages/plugins/request/e-request.js',
