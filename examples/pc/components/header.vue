@@ -8,7 +8,7 @@
     <div class="header-container">
       <a href="https://github.com/Eamonnzhang/vue-cards" target="__blank">
         <!-- <vue-cards-icon name="cards" :size="50"></vue-cards-icon> -->
-        <span class="name">VueCards</span>
+        <span class="name">easyele-ui</span>
       </a>
     </div>
   </header>

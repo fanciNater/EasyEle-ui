@@ -110,7 +110,7 @@ section.view {
     padding: 0 .5em;
   }
   table.table {
-    display: block;
+    // display: block;
     width: 100%;
     margin-bottom: 50px;
     overflow: auto;
@@ -120,6 +120,7 @@ section.view {
     border-collapse: collapse;
     th {
       padding: 10px 8px;
+      text-align: left;
       background-color: #fafbfc;
       border-top: 1px solid #f3f7fa;
       border-bottom: 1px solid #f3f7fa;
