@@ -41,6 +41,12 @@
                     "name": "demo",
                     "isMobile": "1",
                     "path": "/demo"
+                },
+                {
+                    "desc": "文本省略",
+                    "name": "ellipsis",
+                    "isMobile": "1",
+                    "path": "/ellipsis"
                 }
             ]
         }
