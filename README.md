@@ -54,7 +54,7 @@ yarn run  docs:build
 yarn run  version
 ```
 
-## npm-package依赖包名臣 easyele-ui
+## 项目上使用*easyele-ui*
 ### 安装依赖
 ```
 npm install easyele-ui --save
