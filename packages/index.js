@@ -1,14 +1,16 @@
 import { version } from '../package.json'
+import AssetLoader from './assets-loader'
 // 组件
 import TestModule from './components/test-module/index'
 import EEllipsis from './components/e-ellipsis/index'
 import ETagGroup from './components/e-tag-group/index'
+import ESvgIcon from './components/e-svg-icon/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
 import ELodashPlugin from './plugins/lodash/e-lodash'
 
-const components = [TestModule, EEllipsis, ETagGroup]
+const components = [TestModule, EEllipsis, ETagGroup, ESvgIcon]
 
 const plugins = [ERequestPlugin, ELodashPlugin]
 
@@ -37,6 +39,8 @@ export default {
   TestModule,
   EEllipsis,
   ETagGroup,
+  ESvgIcon,
   ERequestPlugin,
-  ELodashPlugin
+  ELodashPlugin,
+  AssetLoader
 }

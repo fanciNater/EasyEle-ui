@@ -16,6 +16,9 @@ const nested = require('postcss-nested')
 const cssnext = require('postcss-cssnext')
 const fs = require('fs')
 
+const svgSpriteLoader = require('rollup-svg-sprite-loader')
+const copy = require('rollup-plugin-copy')
+
 const { getAssetsPath, env, fsExistsSync, chalkConsole } = require('./utils')
 const { esDir } = require('../config/rollup.build.config')
 const aliasConfig = require('../config/alias')
@@ -23,7 +26,7 @@ const { styleOutputPath, externalMap } = require('../config/index')
 const banner = require('../config/banner')
 const isEs = (fmt) => fmt === esDir
 
-function createPlugins({ min } = {}) {
+function createPlugins(config = {}) {
   const exclude = 'node_modules/**'
   const plugins = [
     commonjs(),
@@ -73,8 +76,19 @@ function createPlugins({ min } = {}) {
       resolve: aliasConfig.resolve
     })
   ]
-  if (min) {
+  if (config.min) {
     plugins.push(terser())
+  }
+  if (config.output === 'assets-loader' && config.suffix === '.js') {
+    plugins.push(
+      copy({
+        targets: [
+          { src: 'packages/assets', dest: 'lib' },
+          { src: 'packages/locale', dest: 'lib' }
+        ]
+      })
+    )
+    plugins.push(svgSpriteLoader())
   }
   return plugins
 }

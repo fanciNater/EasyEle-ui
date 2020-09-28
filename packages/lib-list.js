@@ -3,6 +3,10 @@ module.exports = {
     input: 'packages/index.js',
     output: 'index'
   },
+  'assets-loader': {
+    input: 'packages/assets-loader.js',
+    output: 'assets-loader'
+  },
   // 组件
   'test-module': {
     input: 'packages/components/test-module/index.js',
@@ -15,6 +19,10 @@ module.exports = {
   'e-tag-group': {
     input: 'packages/components/e-tag-group/index.js',
     output: 'e-tag-group'
+  },
+  'e-svg-icon': {
+    input: 'packages/components/e-svg-icon/index.js',
+    output: 'e-svg-icon'
   },
   // 插件
   'e-request-plugin': {
