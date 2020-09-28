@@ -47,6 +47,7 @@
     "element-ui": "^2.13.2",
     "ellipsis.js": "^0.1.3",
     "js-file-download": "^0.4.12",
+    "lodash": "^4.17.20",
     "vue-clamp": "^0.3.1",
     "vue-ellipsis": "^1.2.0"
   },

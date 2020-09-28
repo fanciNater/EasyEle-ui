@@ -6,10 +6,11 @@ import ETagGroup from './components/e-tag-group/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
+import ELodashPlugin from './plugins/lodash/e-lodash'
 
 const components = [TestModule, EEllipsis, ETagGroup]
 
-const plugins = [ERequestPlugin]
+const plugins = [ERequestPlugin, ELodashPlugin]
 
 const install = function(Vue) {
   // 判断是否安装
@@ -36,5 +37,6 @@ export default {
   TestModule,
   EEllipsis,
   ETagGroup,
-  ERequestPlugin
+  ERequestPlugin,
+  ELodashPlugin
 }

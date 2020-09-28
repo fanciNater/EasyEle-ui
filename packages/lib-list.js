@@ -21,6 +21,10 @@ module.exports = {
     input: 'packages/plugins/request/e-request.js',
     output: 'e-request-plugin'
   },
+  'e-lodash': {
+    input: 'packages/plugins/lodash/e-lodash.js',
+    output: 'e-lodash'
+  },
   // 指令
   'e-event-outside-directive': {
     input: 'packages/directives/e-event-outside/index.js',
