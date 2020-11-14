@@ -1,0 +1,2 @@
+/* * Copyright © 2020-2020 wucan * Released under the MIT License. */
+.e-ellipsis .tip-overflow{display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:100%}

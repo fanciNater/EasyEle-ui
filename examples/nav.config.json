@@ -1,0 +1,60 @@
+{
+    "开发指南": [
+        {
+            "name": "site-index",
+            "path": "/"
+        },
+        {
+            "name": "introduce",
+            "path": "/introduce",
+            "desc": "介绍"
+        },
+        {
+            "name": "start",
+            "path": "/start",
+            "desc": "快速上手"
+        },
+        {
+            "name": "logs",
+            "path": "/logs",
+            "desc": "更新日志"
+        },
+        {
+            "name": "contribute",
+            "path": "/contribute",
+            "desc": "开发指南"
+        },
+        {
+            "name": "index",
+            "isMobile": "1",
+            "path": "/index",
+            "type": "pages"
+        }
+    ],
+    "组件": [
+        {
+            "desc": "基础组件",
+            "isMobile": "1",
+            "items": [
+                {
+                    "desc": "示例组件",
+                    "name": "demo",
+                    "isMobile": "1",
+                    "path": "/demo"
+                },
+                {
+                    "desc": "文本省略",
+                    "name": "ellipsis",
+                    "isMobile": "1",
+                    "path": "/ellipsis"
+                },
+                {
+                    "desc": "标签组",
+                    "name": "tag-group",
+                    "isMobile": "1",
+                    "path": "/tag-group"
+                }
+            ]
+        }
+    ]
+}
