@@ -1,14 +1,18 @@
 import { version } from '../package.json'
+import AssetLoader from './assets-loader'
 // 组件
 import TestModule from './components/test-module/index'
 import EEllipsis from './components/e-ellipsis/index'
+import ETagGroup from './components/e-tag-group/index'
+import ESvgIcon from './components/e-svg-icon/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
+import ELodashPlugin from './plugins/lodash/e-lodash'
 
-const components = [TestModule, EEllipsis]
+const components = [TestModule, EEllipsis, ETagGroup, ESvgIcon]
 
-const plugins = [ERequestPlugin]
+const plugins = [ERequestPlugin, ELodashPlugin]
 
 const install = function(Vue) {
   // 判断是否安装
@@ -34,5 +38,9 @@ export default {
   install,
   TestModule,
   EEllipsis,
-  ERequestPlugin
+  ETagGroup,
+  ESvgIcon,
+  ERequestPlugin,
+  ELodashPlugin,
+  AssetLoader
 }

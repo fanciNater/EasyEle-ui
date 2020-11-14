@@ -47,6 +47,12 @@
                     "name": "ellipsis",
                     "isMobile": "1",
                     "path": "/ellipsis"
+                },
+                {
+                    "desc": "标签组",
+                    "name": "tag-group",
+                    "isMobile": "1",
+                    "path": "/tag-group"
                 }
             ]
         }
