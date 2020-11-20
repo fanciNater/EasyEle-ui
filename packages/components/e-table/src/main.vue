@@ -1,7 +1,7 @@
 <!--
  * @Author: fanciNate
  * @Date: 2020-11-20 11:35:47
- * @LastEditTime: 2020-11-20 11:43:44
+ * @LastEditTime: 2020-11-20 12:21:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /EasyEle-ui/packages/components/e-table/src/main.vue
@@ -88,12 +88,12 @@
           </template>
 
           <template v-else v-slot:header="{ column }">
-            <x-ellipsis :label="column.label" mode="origin" />
+            <e-ellipsis :label="column.label" mode="origin" />
           </template>
 
-          <template v-if="colConfig.customFootSlot" v-slot:footer="{ column }">
+          <!-- <template v-if="colConfig.customFootSlot" v-slot:footer="{ column }">
             <slot :name="colConfig.customFootSlot" :column="column" :colIndex="colIndex"></slot>
-          </template>
+          </template> -->
         </el-table-column>
         <el-table-column
           v-else
@@ -104,21 +104,21 @@
           :show-overflow-tooltip="false"
           :column-key="colConfig.prop"
         >
-          <!-- lizhihang 表格不使用自带的 show-overflow-tooltip 属性，如果配置了showOverflowTooltip，则使用x-ellipsis组件显示 -->
+          <!-- lizhihang 表格不使用自带的 show-overflow-tooltip 属性，如果配置了showOverflowTooltip，则使用e-ellipsis组件显示 -->
           <template v-if="colConfig.showOverflowTooltip === true" v-slot="{ row, column, $index }">
-            <x-ellipsis :label="row[colConfig.prop]" mode="origin" />
+            <e-ellipsis :label="row[colConfig.prop]" mode="origin" />
           </template>
           <template v-if="colConfig.customHeadSlot" v-slot:header="{ column }">
             <slot :name="colConfig.customHeadSlot" :column="column" :colIndex="colIndex"></slot>
           </template>
 
           <template v-else v-slot:header="{ column }">
-            <x-ellipsis :label="column.label" mode="origin" />
+            <e-ellipsis :label="column.label" mode="origin" />
           </template>
 
-          <template v-if="colConfig.customFootSlot" v-slot:footer="{ column }">
+          <!-- <template v-if="colConfig.customFootSlot" v-slot:footer="{ column }">
             <slot :name="colConfig.customFootSlot" :column="column" :colIndex="colIndex"></slot>
-          </template>
+          </template> -->
         </el-table-column>
       </template>
       <template v-slot:empty>
@@ -147,7 +147,7 @@
 <script>
 import Sortable from 'sortablejs'
 import XSvgIcon from '../../e-svg-icon/index'
-import UUIDUtil from '../../utils/uuid.util'
+import UUIDUtil from '../../../utils/uuid.util'
 
 export default {
   name: 'ETable',

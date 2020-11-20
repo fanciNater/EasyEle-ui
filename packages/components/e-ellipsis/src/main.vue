@@ -45,7 +45,7 @@ import VClamp from 'vue-clamp'
 import ElToolTip from 'element-ui/lib/tooltip'
 
 export default {
-  name: 'XEllipsis',
+  name: 'EEllipsis',
   components: {
     VClamp,
     ElToolTip
