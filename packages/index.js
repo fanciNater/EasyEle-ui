@@ -1,7 +1,14 @@
+/*
+ * @Author: your name
+ * @Date: 2020-09-28 17:14:19
+ * @LastEditTime: 2020-11-20 16:07:56
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /EasyEle-ui/packages/index.js
+ */
 import { version } from '../package.json'
 import AssetLoader from './assets-loader'
 // 组件
-import TestModule from './components/test-module/index'
 import EEllipsis from './components/e-ellipsis/index'
 import ETagGroup from './components/e-tag-group/index'
 import ESvgIcon from './components/e-svg-icon/index'
@@ -10,7 +17,7 @@ import ESvgIcon from './components/e-svg-icon/index'
 import ERequestPlugin from './plugins/request/e-request'
 import ELodashPlugin from './plugins/lodash/e-lodash'
 
-const components = [TestModule, EEllipsis, ETagGroup, ESvgIcon]
+const components = [EEllipsis, ETagGroup, ESvgIcon]
 
 const plugins = [ERequestPlugin, ELodashPlugin]
 
@@ -36,7 +43,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   version,
   install,
-  TestModule,
   EEllipsis,
   ETagGroup,
   ESvgIcon,
