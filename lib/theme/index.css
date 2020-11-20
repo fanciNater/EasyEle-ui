@@ -1,4 +1,2 @@
-/* * Copyright © 2020-2020 wucan * Released under the MIT License. */
+/* * Copyright © 2020-2020 fanciNate * Released under the MIT License. */
 .test-module[data-v-62f4eb2a]{border:1px solid red;color:red;padding:12px;width:100%}
-.e-ellipsis .tip-overflow{display:inline-block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;width:100%}
-.e-tag-group{width:100%;flex:1}.e-tag-group,.e-tag-group>.tag-info{display:-webkit-box;display:-ms-flexbox;display:flex}.e-tag-group>.tag-info{align-items:center;max-width:100%}.e-tag-group .fixed-svg{position:fixed;width:3000px;height:3000px;left:-3000px;top:-3000px;visibility:hidden}

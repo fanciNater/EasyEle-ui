@@ -165,30 +165,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.e-tag-group {
-  width: 100%;
-  flex: 1;
-  display: flex;
-
-  > .tag-info {
-    display: flex;
-    align-items: center;
-    max-width: 100%; // 2020-08-24 11:51:52
-  }
-
-  .fixed-svg {
-    position: fixed;
-    width: 3000px;
-    height: 3000px;
-    left: -3000px;
-    top: -3000px;
-    visibility: hidden;
-    // opacity: 0.5;
-    // top: 0;
-    // left: 0;
-    // background: #FF0000;
-  }
-}
-</style>

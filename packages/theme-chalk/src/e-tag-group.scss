@@ -1,0 +1,20 @@
+.e-tag-group {
+    width: 100%;
+    flex: 1;
+    display: flex;
+
+    >.tag-info {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .fixed-svg {
+        position: fixed;
+        width: 3000px;
+        height: 3000px;
+        left: -3000px;
+        top: -3000px;
+        visibility: hidden;
+    }
+}

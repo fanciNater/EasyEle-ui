@@ -132,15 +132,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.e-ellipsis {
-  .tip-overflow {
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-  }
-}
-</style>
