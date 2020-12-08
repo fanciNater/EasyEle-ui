@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-09-28 17:14:19
- * @LastEditTime: 2020-11-20 16:07:56
- * @LastEditors: your name
+ * @LastEditTime: 2020-12-08 18:14:28
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /EasyEle-ui/packages/index.js
  */
@@ -12,12 +12,13 @@ import AssetLoader from './assets-loader'
 import EEllipsis from './components/e-ellipsis/index'
 import ETagGroup from './components/e-tag-group/index'
 import ESvgIcon from './components/e-svg-icon/index'
+import EWaterMark from './components/e-water-mark/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
 import ELodashPlugin from './plugins/lodash/e-lodash'
 
-const components = [EEllipsis, ETagGroup, ESvgIcon]
+const components = [EEllipsis, ETagGroup, ESvgIcon, EWaterMark]
 
 const plugins = [ERequestPlugin, ELodashPlugin]
 
@@ -46,6 +47,7 @@ export default {
   EEllipsis,
   ETagGroup,
   ESvgIcon,
+  EWaterMark,
   ERequestPlugin,
   ELodashPlugin,
   AssetLoader

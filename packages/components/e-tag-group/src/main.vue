@@ -25,7 +25,7 @@
 <script>
 import elementResizeDetectorMaker from 'element-resize-detector'
 export default {
-  name: 'XTagGroup',
+  name: 'ETagGroup',
   props: {
     calcKey: {
       type: String,

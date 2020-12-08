@@ -53,6 +53,12 @@
                     "name": "table",
                     "isMobile": "1",
                     "path": "/table"
+                },
+                {
+                    "desc": "水印",
+                    "name": "water-mark",
+                    "isMobile": "1",
+                    "path": "/water-mark"
                 }
             ]
         }
