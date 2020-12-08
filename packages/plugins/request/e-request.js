@@ -7,34 +7,6 @@ const RequestPlugin = {
     const requestInterceptorMap = new Map()
     const responseInterceptorMap = new Map()
 
-    /**
-     *
-     * @deprecated 单词命名出错，方法弃用，在2020-07-01之后无法使用
-     * @param {any} catchFunction
-     */
-    // eslint-disable-next-line no-extend-native
-    Promise.prototype.aysncErrorCatch = function(catchFunction) {
-      console.warn(
-        '@deprecated 单词命名出错，方法弃用，在2020-07-01之后无法使用, 请使用asyncErrorCatch方法'
-      )
-      this.$currentErrorCatchFunction = catchFunction
-      return this
-    }
-
-    /**
-     *
-     * @deprecated 单词命名出错，方法弃用，在2020-07-01之后无法使用
-     * @param {any} catchFunction
-     */
-    // eslint-disable-next-line no-extend-native
-    Promise.prototype.aysncThen = function(onResolve, onReject) {
-      console.warn(
-        '@deprecated 单词命名出错，方法弃用，在2020-07-01之后无法使用, 请使用asyncThen方法'
-      )
-      this.then(onResolve, onReject)
-      return this
-    }
-
     // eslint-disable-next-line no-extend-native
     Promise.prototype.asyncErrorCatch = function(catchFunction) {
       this.$currentErrorCatchFunction = catchFunction
