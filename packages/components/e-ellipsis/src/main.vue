@@ -45,7 +45,7 @@ import VClamp from 'vue-clamp'
 import ElToolTip from 'element-ui/lib/tooltip'
 
 export default {
-  name: 'XEllipsis',
+  name: 'EEllipsis',
   components: {
     VClamp,
     ElToolTip
@@ -132,15 +132,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.e-ellipsis {
-  .tip-overflow {
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-  }
-}
-</style>

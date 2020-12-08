@@ -12,8 +12,12 @@
 }
 </style>
 <script>
+import ETagGroup from '../../packages/components/e-tag-group/src/main'
 export default {
   name: 'TagGroupDemo',
+  components: {
+    ETagGroup
+  },
   data() {
     return {
       tags: [

@@ -1,16 +1,24 @@
+/*
+ * @Author: your name
+ * @Date: 2020-09-28 17:14:19
+ * @LastEditTime: 2020-12-08 18:14:28
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /EasyEle-ui/packages/index.js
+ */
 import { version } from '../package.json'
 import AssetLoader from './assets-loader'
 // 组件
-import TestModule from './components/test-module/index'
 import EEllipsis from './components/e-ellipsis/index'
 import ETagGroup from './components/e-tag-group/index'
 import ESvgIcon from './components/e-svg-icon/index'
+import EWaterMark from './components/e-water-mark/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
 import ELodashPlugin from './plugins/lodash/e-lodash'
 
-const components = [TestModule, EEllipsis, ETagGroup, ESvgIcon]
+const components = [EEllipsis, ETagGroup, ESvgIcon, EWaterMark]
 
 const plugins = [ERequestPlugin, ELodashPlugin]
 
@@ -36,10 +44,10 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   version,
   install,
-  TestModule,
   EEllipsis,
   ETagGroup,
   ESvgIcon,
+  EWaterMark,
   ERequestPlugin,
   ELodashPlugin,
   AssetLoader

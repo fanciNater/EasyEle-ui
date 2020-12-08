@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-09-28 17:14:19
+ * @LastEditTime: 2020-12-08 17:50:27
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /EasyEle-ui/packages/lib-list.js
+ */
 module.exports = {
   index: {
     input: 'packages/index.js',
@@ -8,10 +16,6 @@ module.exports = {
     output: 'assets-loader'
   },
   // 组件
-  'test-module': {
-    input: 'packages/components/test-module/index.js',
-    output: 'test-module'
-  },
   'e-ellipsis': {
     input: 'packages/components/e-ellipsis/index.js',
     output: 'e-ellipsis'
@@ -23,6 +27,10 @@ module.exports = {
   'e-svg-icon': {
     input: 'packages/components/e-svg-icon/index.js',
     output: 'e-svg-icon'
+  },
+  'e-water-mark': {
+    input: 'packages/components/e-water-mark/index.js',
+    output: 'e-water-mark'
   },
   // 插件
   'e-request-plugin': {

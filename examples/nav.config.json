@@ -37,12 +37,6 @@
             "isMobile": "1",
             "items": [
                 {
-                    "desc": "示例组件",
-                    "name": "demo",
-                    "isMobile": "1",
-                    "path": "/demo"
-                },
-                {
                     "desc": "文本省略",
                     "name": "ellipsis",
                     "isMobile": "1",
@@ -53,6 +47,18 @@
                     "name": "tag-group",
                     "isMobile": "1",
                     "path": "/tag-group"
+                },
+                {
+                    "desc": "表格",
+                    "name": "table",
+                    "isMobile": "1",
+                    "path": "/table"
+                },
+                {
+                    "desc": "水印",
+                    "name": "water-mark",
+                    "isMobile": "1",
+                    "path": "/water-mark"
                 }
             ]
         }

@@ -54,17 +54,9 @@ function createPlugins(config = {}) {
     }),
     postcss({
       plugins: [simplevars(), nested(), cssnext({ warnForDuplicates: false }), cssnano()],
-      use: [
-        [
-          'less',
-          {
-            javascriptEnabled: true
-          }
-        ]
-      ],
       inject: false,
       // sourceMap: true,
-      extensions: ['.css', '.less'],
+      extensions: ['.css', '.less', '.scss'],
       extract: true // 输出路径
     }),
     replace({
