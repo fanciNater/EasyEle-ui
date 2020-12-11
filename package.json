@@ -18,11 +18,11 @@
   "style": "lib/theme-chalk/index.css",
   "repository": {
     "type": "git",
-    "url": "x"
+    "url": "https://github.com/fanciNater/EasyEle-ui.git"
   },
-  "homepage": "x",
+  "homepage": "https://github.com/fanciNater/EasyEle-ui.git",
   "bugs": {
-    "url": "x"
+    "url": "https://github.com/fanciNater/EasyEle-ui.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve --copy",
