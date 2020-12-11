@@ -89,7 +89,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^4.1.0",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.4.1",
     "husky": "^3.0.5",
     "image-webpack-loader": "^6.0.0",
     "less": "^3.12.2",
