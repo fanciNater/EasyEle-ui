@@ -1,8 +1,6 @@
-# vue-lib-starter
+# EasyeleUi
 
-[文档地址](https://juejin.im/post/5d7860b0f265da03bc12a3d2)
-
-[组件库官网](http://47.114.52.172/easyele-ui/dist/index.html)
+<!-- [组件库官网](http://47.114.52.172/easyele-ui/dist/index.html) -->
 
 ## 安装依赖
 ```
@@ -62,11 +60,11 @@ npm install easyele-ui --save
 
 ### 安装 babel-plugin-import
 ```
-npm installl babel-plugin-import --save-dev
+npm install babel-plugin-import --save-dev
 ```
 或
 ```
-cnpm installl babel-plugin-import --save-dev
+cnpm install babel-plugin-import --save-dev
 ```
 
 ### 配置babel.config.js
@@ -74,13 +72,8 @@ cnpm installl babel-plugin-import --save-dev
 ```javascript
 const EasyEleUIPlugin = ['import',
   {
-    // 组件库的名字,可以根据你发布的库的package.json的name自行更改
     libraryName: 'easyele-ui',
-
-    // 默认打包是lib,不用更改
     libraryDirectory: 'lib',
-
-    // 如果有样式文件,因为打包后样式统一放在/lib/theme下,所以需要稍微转换下
     style: (name, file) => {
       const libDirIndex = name.lastIndexOf('/')
       const libDir = name.substring(0, libDirIndex)
@@ -90,4 +83,73 @@ const EasyEleUIPlugin = ['import',
   },
   'easyele-ui'
 ]
+
+...
+
+module.exports = {
+  ...
+  plugins: [
+    EasyEleUIPlugin
+  ]
+};
+
+```
+
+### 如何引入插件
+
+*创建一个js文件，按需引入组件，插件，或指令，如下示例*
+```javascript
+import Vue from 'vue'
+import {
+    TestModule
+} from 'easyele-ui'
+import ERequestPlugin from 'easyele-ui/lib/e-request-plugin'
+import EEventOutsideDirective from 'easyele-ui/lib/e-event-outside-directive'
+
+Vue.use(TestModule)
+Vue.use(EEventOutsideDirective)
+Vue.use(ERequestPlugin, {
+    baseURL: process.env.VUE_APP_BASE_DOMAIN,
+    timeout: 15000,
+    headers: {
+        'Accept-Language': 'zh-CN'
+    },
+    needShowMessage: true,
+    businessErrorCatch: function (
+        failRes,
+        response,
+        needShowMessage
+    ) {
+        if (needShowMessage) {
+
+        }
+        if (failRes.bizCode === '3027') {
+
+        }
+    },
+    errorCatch: function (err, needShowMessage) {
+      if (!err.response) {
+          return true
+      }
+      if (err.response && err.response.status === 401) {
+
+          return true
+      } else if (err.response.status === 404) {
+
+      } else if (err.response.status === 423) {
+
+          return true
+      } else if (err.response.status === 500) {
+
+          return true
+      } else if (err.response.status === 402) {
+
+          return true
+      } else if (err.response.status === 410) { // 版本更新
+
+      } else {
+          return true
+      }
+    }
+})
 ```
