@@ -47,7 +47,7 @@
     "cm": "git-cz"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "element-resize-detector": "^1.2.1",
     "element-ui": "^2.13.2",
     "ellipsis.js": "^0.1.3",
