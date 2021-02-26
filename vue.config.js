@@ -61,6 +61,7 @@ const setAlias = (config) => {
 module.exports = {
   lintOnSave: !utils.isProduct,
   runtimeCompiler: true,
+  publicPath: './',
   productionSourceMap: false,
   pages: {
     index: {

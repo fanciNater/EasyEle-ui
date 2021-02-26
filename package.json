@@ -29,6 +29,7 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve --copy",
+    "build-docs": "vue-cli-service build --copy",
     "lib:cli": "cross-env rimraf ./lib && node ./build/cli.build.js",
     "lib:theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "lib": "npm run lib:rollup && npm run lib:theme",
