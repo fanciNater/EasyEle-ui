@@ -1,7 +1,7 @@
 <!--
  * @Author: fanciNate
  * @Date: 2021-04-22 13:02:10
- * @LastEditTime: 2021-04-22 13:02:58
+ * @LastEditTime: 2021-04-22 13:19:48
  * @LastEditors: fanciNate
  * @Description: In User Settings Edit
  * @FilePath: /vsCodeProjects/EasyEle-ui/packages/components/e-modal/src/main.vue
@@ -33,23 +33,23 @@
                 placeholder="回车搜索字段名称"
                 @keyup.enter.native="handlerDoSearch"
               >
-                <x-svg-icon
+                <e-svg-icon
                   slot="prefix"
                   style="marginBottom=10px"
                   class="header-search-icon"
                   name="x-lib-search"
-                ></x-svg-icon>
+                ></e-svg-icon>
               </el-input>
             </div>
           </template>
           <template v-else>
             <div class="block"></div>
           </template>
-          <x-svg-icon
+          <e-svg-icon
             class="header-close-icon"
             name="close-icon"
             @click.native="closeBtnClick"
-          ></x-svg-icon>
+          ></e-svg-icon>
         </div>
         <slot v-else name="title"></slot>
       </template>
@@ -82,13 +82,13 @@
 </template>
 <script>
 import ElDialog from 'element-ui/lib/dialog'
-import XSvgIcon from '../x-svg-icon/x-svg-icon'
+import ESvgIcon from '../../e-svg-icon/src/main'
 
 export default {
   name: 'EModal',
   components: {
     ElDialog,
-    XSvgIcon
+    ESvgIcon
   },
   props: {
     width: {
@@ -110,7 +110,7 @@ export default {
       type: Object,
       default: function() {
         return {
-          title: this.$t('xui.xmodal.okConfigTitle')
+          title: '确定'
         }
       }
     },
@@ -118,7 +118,7 @@ export default {
       type: Object,
       default: function() {
         return {
-          title: this.$t('xui.xmodal.cancelConfigTitle')
+          title: '取消'
         }
       }
     },

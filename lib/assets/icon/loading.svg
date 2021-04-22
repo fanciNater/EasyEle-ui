@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg t="1600412072283" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9070"
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+  <defs>
+    <style type="text/css">
+      @keyframes shapeDance {
+        25% {
+          transform: translateY(150px);
+          -ms-transform: translateY(150px);
+          -webkit-transform: translateY(150px);
+          -moz-transform: translateY(150px);
+        }
+
+        75% {
+          transform: translateY(-300px);
+          -ms-transform: translateY(-300px);
+          -webkit-transform: translateY(-300px);
+          -moz-transform: translateY(-300px);
+        }
+      }
+
+      @@-webkit-keyframes shapeDance {
+        25% {
+          transform: translateY(150px);
+          -ms-transform: translateY(150px);
+          -webkit-transform: translateY(150px);
+          -moz-transform: translateY(150px);
+        }
+
+        75% {
+          transform: translateY(-300px);
+          -ms-transform: translateY(-300px);
+          -webkit-transform: translateY(-300px);
+          -moz-transform: translateY(-300px);
+        }
+      }
+
+      @keyframes shapeRotate {
+        0% {
+          transform: rotate(0);
+          -ms-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+        }
+      }
+
+      @@-webkit-keyframes shapeRotate {
+        0% {
+          transform: rotate(0);
+          -ms-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+        }
+      }
+
+      .shape-group {
+        animation: shapeDance 1s infinite linear;
+        -webkit-animation: shapeDance 1s infinite linear;
+      }
+
+      .shape-group path {
+        transform-origin: center center;
+        -ms-transform-origin: center center;
+        -webkit-transform-origin: center center;
+        -moz-transform-origin: center center;
+        animation: shapeRotate 1s infinite linear;
+        -webkit-animation: shapeRotate 1s infinite linear;
+      }
+    </style>
+  </defs>
+  <g class="shape-group">
+    <path fill="blue" d="M512 512 v-100 a100 100 0 1 1 0 200 a100 100 0 1 1 0 -200 z">
+      <animate attributeName="d" dur="3s" repeatCount="indefinite" begin="0.5"
+        values="M512 512 v-106 a106 106 0 0 1 0 212 a106 106 0 0 1 0 -212 z;
+        M512 512 v-92 h-52 h106 a40 40 0 0 1 40 40 v106 a40 40 0 0 1 -40 40 h-106 a40 40 0 0 1 -40 -40 v-106 a40 40 0 0 1 40 -40 h106 z;
+        M512 512 v-92 h-52 h106 a40 40 0 0 1 40 40 v106 a40 40 0 0 1 -40 40 h-106 a40 40 0 0 1 -40 -40 v-106 a40 40 0 0 1 40 -40 h106 z;
+        M512 512 v-106 a183.6 183.6 0 0 1 91.8 159 a183.6 183.6 0 0 1 -183.6 0 a183.6 183.6 0 0 1 91.8 -159 z;
+        M512 512 v-106 a183.6 183.6 0 0 1 91.8 159 a183.6 183.6 0 0 1 -183.6 0 a183.6 183.6 0 0 1 91.8 -159 z;
+        M512 512 v-106 a106 106 0 0 1 0 212 a106 106 0 0 1 0 -212 z">
+      </animate>
+      <animate begin="0.5" attributeName="fill" dur="3s" repeatCount="indefinite" values="blue;green;green;orange;orange;blue">
+      </animate>
+    </path>
+  </g>
+  <g class="line-group">
+    <path fill="rgb(203,202,195)"
+      d="M202 698 h620 a10 10 0 0 1 10 10 v3 a10 10 0 0 1 -10 10 h-620 a10 10 0 0 1 -10 -10 v-3 a10 10 0 0 1 10 -10 z"
+      stroke="#e8e8e8" stroke-width="5">
+      <animate attributeName="d"
+        values="M202 698 h620 a10 10 0 0 1 10 10 v3 a10 10 0 0 1 -10 10 h-620 a10 10 0 0 1 -10 -10 v-3 a10 10 0 0 1 10 -10 z;
+        M202 698 q310 112.83, 620 0 a10 10 0 0 1 6.84 18.79 q-316.84 112.83, -633.68 0 a10 10 0 0 1 6.84 -18.79 z;
+        M202 698 q310 -54.66, 620 0 a 10 10 0 0 1 -3.47 19.70 q-306.53 -54.66, -613.06 0 a 10 10 0 0 1 -3.47 -19.70 z;
+        M202 698 h620 a10 10 0 0 1 10 10 v3 a10 10 0 0 1 -10 10 h-620 a10 10 0 0 1 -10 -10 v-3 a10 10 0 0 1 10 -10 z;
+        M202 698 h620 a10 10 0 0 1 10 10 v3 a10 10 0 0 1 -10 10 h-620 a10 10 0 0 1 -10 -10 v-3 a10 10 0 0 1 10 -10 z"
+        dur="1s" repeatCount="indefinite">
+      </animate>
+    </path>
+  </g>
+  <!-- <path fill="blue" d="M512 512 v-106 a106 106 0 0 1 0 212 a106 106 0 0 1 0 -212 z"/> -->
+  <!-- <path fill="green" d="M512 512 v-92 h-52 h106 a40 40 0 0 1 40 40 v106 a40 40 0 0 1 -40 40 h-106 a40 40 0 0 1 -40 -40 v-106 a40 40 0 0 1 40 -40 h106 z"/> -->
+  <!-- <path fill="orange" d="M512 512 v-106 a183.6 183.6 0 0 1 91.8 159 a183.6 183.6 0 0 1 -183.6 0 a183.6 183.6 0 0 1 91.8 -159 z" /> -->
+  <!-- <path d="M202 698 q310 -54.66, 620 0 a 10 10 0 0 1 -3.47 19.70 q-306.53 -54.66, -613.06 0 a 10 10 0 0 1 -3.47 -19.70 z" /> -->
+</svg>
