@@ -1,0 +1,10 @@
+.e-svg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .svg-icon {
+        fill: currentColor;
+        overflow: hidden;
+    }
+}

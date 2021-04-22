@@ -1,5 +1,13 @@
+<!--
+ * @Author: fanciNate
+ * @Date: 2020-12-12 10:53:10
+ * @LastEditTime: 2021-04-07 14:57:20
+ * @LastEditors: fanciNate
+ * @Description: In User Settings Edit
+ * @FilePath: /vsCodeProjects/EasyEle-ui/packages/components/e-svg-icon/src/main.vue
+-->
 <template>
-  <div class="x-svg-icon">
+  <div class="e-svg-icon">
     <svg
       class="svg-icon"
       :class="className"

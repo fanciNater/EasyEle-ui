@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2020-09-28 17:14:19
- * @LastEditTime: 2020-12-08 18:14:28
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-04-22 13:04:18
+ * @LastEditors: fanciNate
  * @Description: In User Settings Edit
- * @FilePath: /EasyEle-ui/packages/index.js
+ * @FilePath: /vsCodeProjects/EasyEle-ui/packages/index.js
  */
 import { version } from '../package.json'
 import AssetLoader from './assets-loader'
@@ -13,12 +13,13 @@ import EEllipsis from './components/e-ellipsis/index'
 import ETagGroup from './components/e-tag-group/index'
 import ESvgIcon from './components/e-svg-icon/index'
 import EWaterMark from './components/e-water-mark/index'
+import EModal from './components/e-modal/index'
 
 // 插件
 import ERequestPlugin from './plugins/request/e-request'
 import ELodashPlugin from './plugins/lodash/e-lodash'
 
-const components = [EEllipsis, ETagGroup, ESvgIcon, EWaterMark]
+const components = [EEllipsis, ETagGroup, ESvgIcon, EWaterMark, EModal]
 
 const plugins = [ERequestPlugin, ELodashPlugin]
 
@@ -48,6 +49,7 @@ export default {
   ETagGroup,
   ESvgIcon,
   EWaterMark,
+  EModal,
   ERequestPlugin,
   ELodashPlugin,
   AssetLoader

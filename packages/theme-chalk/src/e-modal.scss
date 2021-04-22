@@ -1,0 +1,91 @@
+@import './variable.scss';
+
+.el-dialog__wrapper {
+  .e-modal-wrapper {
+    margin: 0 auto !important;
+    padding: 12px 20px;
+
+    .el-dialog__header {
+      padding: 12px 8px 12px 12px !important;
+    }
+
+    .el-dialog__body {
+      padding: 12px;
+      overflow-y: auto !important;
+    }
+
+    .el-dialog__footer {
+      padding: 12px !important;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+
+  .e-modal-wrapper {
+    .modal-header-row {
+      display: flex;
+      align-items: center;
+      .header-title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .search-block {
+        margin-left: 16px;
+        margin-right: 24px;
+        border-left: 1px solid #DCDFE6;
+        flex: 1;
+        height: 14px;
+        display: flex;
+        align-items: center;
+        .el-input {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          .el-input__inner {
+            position: relative;
+            left: 28px;
+            height: 100%;
+            font-size: 12px;
+            border: 0;
+          }
+          .el-input__prefix {
+            display: flex;
+            align-items: center;
+            left: 12px;
+            .header-search-icon {
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
+      }
+      .block {
+        flex: 1;
+      }
+
+      .header-close-icon {
+        cursor: pointer;
+
+        &:hover {
+          color: $--app-primary-color;
+        }
+      }
+    }
+    
+  }
+}
+
+.e-modal {
+  .custom-modal {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.5;
+  }
+}

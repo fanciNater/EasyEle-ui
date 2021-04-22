@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2020-09-28 17:14:19
- * @LastEditTime: 2020-12-08 17:50:27
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-04-22 13:03:47
+ * @LastEditors: fanciNate
  * @Description: In User Settings Edit
- * @FilePath: /EasyEle-ui/packages/lib-list.js
+ * @FilePath: /vsCodeProjects/EasyEle-ui/packages/lib-list.js
  */
 module.exports = {
   index: {
@@ -31,6 +31,10 @@ module.exports = {
   'e-water-mark': {
     input: 'packages/components/e-water-mark/index.js',
     output: 'e-water-mark'
+  },
+  'e-modal': {
+    input: 'packages/components/e-modal/index.js',
+    output: 'e-modal'
   },
   // 插件
   'e-request-plugin': {
