@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2020-09-28 17:14:19
- * @LastEditTime: 2021-04-22 13:03:47
+ * @LastEditTime: 2022-01-10 22:30:50
  * @LastEditors: fanciNate
  * @Description: In User Settings Edit
- * @FilePath: /vsCodeProjects/EasyEle-ui/packages/lib-list.js
+ * @FilePath: /EasyEle-ui/packages/lib-list.js
  */
 module.exports = {
   index: {
@@ -35,6 +35,14 @@ module.exports = {
   'e-modal': {
     input: 'packages/components/e-modal/index.js',
     output: 'e-modal'
+  },
+  'e-form-engine': {
+    input: 'packages/components/e-form-engine/index.js',
+    output: 'e-form-engine'
+  },
+  'e-empty-page': {
+    input: 'packages/components/e-empty-page/index.js',
+    output: 'e-empty-page'
   },
   // 插件
   'e-request-plugin': {

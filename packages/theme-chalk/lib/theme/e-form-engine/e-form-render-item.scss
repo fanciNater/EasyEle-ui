@@ -1,0 +1,29 @@
+.e-form-render-item {
+    margin-bottom: 12px;
+    display: inline-block;
+    // padding-right: 24px;
+    padding: 6px 18px;
+    box-sizing: border-box;
+    .el-form-item__label {
+        font-size: 12px;
+        line-height: 12px;
+        min-height: 12px;
+        display: inline-block;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: -8px;
+        }
+    }
+    .el-form-item__content {
+        .el-input {
+            font-size: 12px;
+            height: 32px;
+            .el-input__inner {
+                height: 100%;
+                border-radius: 2px;
+                padding: 0 8px;
+            }
+        }
+    }
+}

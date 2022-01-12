@@ -1,0 +1,18 @@
+.static-placeholder {
+    &.e-form-render-item {
+        margin: 0;
+    }
+    &.el-form-item {
+        .el-form-item__label {
+            display: none;
+        }
+        .el-form-item__content {
+            line-height: 1;
+            .text-container {
+                display: inline-block;
+                max-width: 96%;
+                // height: 16px;
+            }
+        }
+    }
+}

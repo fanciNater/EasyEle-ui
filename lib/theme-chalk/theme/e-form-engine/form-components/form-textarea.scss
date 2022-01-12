@@ -1,0 +1,16 @@
+.form-textarea {
+    .el-form-item__content {
+        .el-textarea {
+            margin-top: 4px;
+            .el-textarea__inner {
+                font-size: 12px;
+                font-family: 'element-icons';
+            }
+            .el-input__count {
+                bottom: -10px;
+                right: 6px;
+                background-color: unset;
+            }
+        }
+    }
+}

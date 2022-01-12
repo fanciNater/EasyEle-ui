@@ -107,6 +107,19 @@ module.exports = {
       .loader('vue-markdown-loader/lib/markdown-compiler')
       .options(vueMarkdown)
 
+    const svgRule = config.module.rule('svg')
+    svgRule.uses.clear()
+    svgRule
+      .test(/\.svg$/)
+      .include.add(resolve('./src/assets/icons'))
+      .add(resolve('./packages/assets/icon'))
+      .end()
+      .use('svg-sprite-loader')
+      .loader('svg-sprite-loader')
+      .options({
+        symbolId: 'svg-[name]'
+      })
+
     config.module
       .rule('js')
       .include.add(/packages/)

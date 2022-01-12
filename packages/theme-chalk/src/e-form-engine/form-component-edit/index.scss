@@ -1,0 +1,31 @@
+.form-component-edit {
+    width: 24%;
+    border: 1px solid #efefef;
+    padding: 8px;
+    box-sizing: border-box;
+    .edit-item {
+        display: inline-flex;
+        border: 1px solid #e7e7e7;
+        border-radius: 2px;
+        height: 44px;
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        width: 56px;
+        margin: 0 5px;
+        margin-bottom: 10px;
+        &:hover {
+            cursor: move;
+        }
+        .draggable-icon {
+            display: block;
+        }
+        .draggable-name {
+            display: block;
+        }
+    }
+}

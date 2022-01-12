@@ -56,7 +56,8 @@
     "lodash": "^4.17.20",
     "sortablejs": "^1.12.0",
     "vue-clamp": "^0.3.1",
-    "vue-ellipsis": "^1.2.0"
+    "vue-ellipsis": "^1.2.0",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
@@ -128,6 +129,7 @@
     "stylelint-config-standard": "^18.3.0",
     "stylelint-order": "^3.1.0",
     "stylelint-webpack-plugin": "^0.10.5",
+    "svg-sprite-loader": "^6.0.11",
     "vue": "^2.6.10",
     "vue-highlight.js": "^2.2.0",
     "vue-markdown-loader": "^2.4.1",

@@ -1,0 +1,23 @@
+.form-input-number {
+    .el-form-item__content {
+        .el-input-number {
+            width: 100%;
+            line-height: 32px;
+            .el-input-number__decrease {
+                line-height: 15px;
+                height: 15px;
+                bottom: 1px;
+                border-radius: 0 1px 1px 0;
+            }
+            .el-input-number__increase {
+                line-height: 15px;
+                height: 15px;
+                top: 1px;
+                border-radius: 0 1px 1px 0;
+            }
+            .el-input__inner {
+                text-align: left;
+            }
+        }
+    }
+}

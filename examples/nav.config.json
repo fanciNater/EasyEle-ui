@@ -59,6 +59,12 @@
                     "name": "water-mark",
                     "isMobile": "1",
                     "path": "/water-mark"
+                },
+                {
+                    "desc": "表单",
+                    "name": "form-engine",
+                    "isMobile": "1",
+                    "path": "/form-engine"
                 }
             ]
         }

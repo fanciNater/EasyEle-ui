@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-09-28 17:14:19
- * @LastEditTime: 2020-12-08 19:25:19
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-01-10 22:37:10
+ * @LastEditors: fanciNate
  * @Description: In User Settings Edit
  * @FilePath: /EasyEle-ui/examples/pc/main.js
  */
@@ -13,6 +13,7 @@ import router from './router'
 import elementUi from 'element-ui'
 
 import './assets/scss/index.scss'
+import '../../packages/theme-chalk/src/index.scss'
 
 import ELodash from '../../packages/plugins/lodash/e-lodash'
 
@@ -21,7 +22,9 @@ import WaterMark from '../demos/water-mark.vue'
 import EEllipsis from '../../packages/components/e-ellipsis/index'
 import ETable from '../../packages/components/e-table/index'
 import EWaterMark from '../../packages/components/e-water-mark/index'
-import TagGroup from '../../packages/components/e-tag-group/index'
+// import TagGroup from '../../packages/components/e-tag-group/index'
+import EFormEngine from '../../packages/components/e-form-engine/index'
+import ESvgIcon from '../../packages/components/e-svg-icon/index'
 
 Vue.config.productionTip = false
 
@@ -42,6 +45,8 @@ Vue.use(EEllipsis)
 Vue.use(ETable)
 Vue.use(ELodash)
 Vue.use(EWaterMark)
+Vue.use(EFormEngine)
+Vue.use(ESvgIcon)
 
 Vue.component('water-mark', WaterMark)
 Vue.component('demo-block', demoBlock)
